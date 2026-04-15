@@ -1,13 +1,14 @@
 "use client"
 
 import { useContext } from "react"
-import { FriendsContext } from "../Context/ContextAPI"
+// import { FriendsContext } from "../Context/ContextAPI"
 import FriendsCard from "@/ui/FriendsCard"
+import { FriendsContext } from "@/components/Context/ContextAPI"
 
 const FriendsSection = () => {
 
-  const friends = useContext(FriendsContext)
-  
+    const friends = useContext(FriendsContext)
+
   if (!friends.length) {
     return (
       <div className="container mx-auto px-20 py-20 flex justify-center">

@@ -4,7 +4,7 @@ import { useContext } from "react";
 
 const Card = () => {
   const friends = useContext(FriendsContext)
-  console.log(friends)
+  // console.log(friends)
   return (
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 px-40 mb-10">
       <div className="border border-[hsl(0,2%,94%)] shadow-md rounded-md  py-8 text-center">

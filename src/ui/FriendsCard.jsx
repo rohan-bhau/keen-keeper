@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react'
 
 const FriendsCard = ({ friend }) => {
-    console.log(friend)
+    // console.log(friend)
 
     const {
       id,
@@ -17,7 +17,7 @@ const FriendsCard = ({ friend }) => {
       goal,
       next_due_date,
     } = friend;
-    console.log(picture) 
+    // console.log(picture) 
     
   return (
     <Link href={`/${id}`} className="border border-[hsl(0,2%,94%)]  shadow-md rounded-md py-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer ">
