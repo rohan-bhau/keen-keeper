@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 const FriendsCard = ({ friend }) => {
@@ -19,7 +20,7 @@ const FriendsCard = ({ friend }) => {
     console.log(picture) 
     
   return (
-    <div className="border border-[hsl(0,2%,94%)]  shadow-md rounded-md py-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer ">
+    <Link href={`/${id}`} className="border border-[hsl(0,2%,94%)]  shadow-md rounded-md py-6 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] cursor-pointer ">
       <div className="w-[80px] h-[80px] rounded-full overflow-hidden mx-auto">
         <Image
           className="rounded-full overflow-hidden w-full h-auto object-cover"
@@ -57,7 +58,7 @@ const FriendsCard = ({ friend }) => {
           {status}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }
 
