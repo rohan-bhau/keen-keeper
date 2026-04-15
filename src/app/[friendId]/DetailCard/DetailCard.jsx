@@ -9,7 +9,7 @@ const DetailCard = ({ friendId }) => {
 
     const friends = useContext(FriendsContext)
     // console.log(friends)
-    const friend = friends.find(fr => Number(friendId) === Number(fr.id))
+    const friend = friends.find(fr =>friendId ==fr.id)
     // console.log(friend)
 
 

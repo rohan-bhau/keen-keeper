@@ -5,7 +5,11 @@ import { RiDeleteBinLine, RiNotificationSnoozeLine } from "react-icons/ri";
 
 const LeftCard = ({ friend }) => {
   if (!friend) {
-    return <div>Loading...</div>;
+    return (
+      <div className="py-10 flex justify-end">
+        <span className="loading loading-spinner text-error"></span>
+      </div>
+    );
   }
 
   const {
