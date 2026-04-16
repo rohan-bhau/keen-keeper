@@ -1,5 +1,6 @@
 "use client"
 import Banner from "@/components/Banner/Banner";
+import FriendsSection from "@/components/FriendsSection/FriendsSection";
 
 import Image from "next/image";
 
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <main>
       <Banner></Banner>
-      {/* <FriendsSection></FriendsSection> */}
+      <FriendsSection></FriendsSection>
     </main>
   );
 }
